@@ -1,9 +1,10 @@
 import React from 'react';
-import Register from './screen/Register';
+import Loging from './screen/Loging';
+
 
 const App = () => {
   return (
-   <Register/>
+   <Loging/>
   );
 };
 

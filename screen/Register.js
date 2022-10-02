@@ -1,9 +1,9 @@
-import { Text,StyleSheet, View ,TextInput,TouchableOpacity} from "react-native";
+import { Text,StyleSheet, View ,TextInput,TouchableOpacity,Image} from "react-native";
 
 const Register = () => {
     return (
         <View style={styles.container}>
-        
+
       <Text style={styles.baseText}>
         REGISTER 
       </Text>
@@ -16,7 +16,7 @@ const Register = () => {
         placeholder="Vehicle Number"
         keyboardType="text"
       />
-     <TouchableOpacity style={styles.button}>
+     <TouchableOpacity name="buttonR" style={styles.button}>
      <Text style={styles.buttontext}>Register</Text>
      </TouchableOpacity>
        
