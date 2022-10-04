@@ -13,7 +13,7 @@ const Register = () => {
        <TextInput style={styles.input} placeholder="Contact" keyboardType="numeric"/>
        <TextInput
         style={styles.input}
-        placeholder="Vehicle Number"
+        placeholder="Vehicle Number" 
         keyboardType="text"
       />
      <TouchableOpacity name="buttonR" style={styles.button}>
