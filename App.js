@@ -1,9 +1,8 @@
-import EditProfileScreen from "./screens/EditProfileScreen"
-import Loging from "./screens/Loging"
+import Dashboard from "./screens/Dashboard"
 import React from 'react';
 const App=()=>{
   return(
-      <EditProfileScreen/>
+      <Dashboard/>
   )
 }
 export default App

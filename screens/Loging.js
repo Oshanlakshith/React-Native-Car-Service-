@@ -1,7 +1,11 @@
 import React from 'react';
 import { View,StyleSheet,Image,Text,TextInput, TouchableOpacity} from "react-native";
+import { useTheme } from '@react-navigation/native';
 
- const Loging=()=>{
+
+ const Loging=({navigation})=>{
+    const { colors } = useTheme();
+
     return(
 <View>
     <Text style={styles.text}>
