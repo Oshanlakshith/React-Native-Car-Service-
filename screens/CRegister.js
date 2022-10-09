@@ -19,7 +19,7 @@ import Animated from 'react-native-reanimated';
 
 import ImagePicker from 'react-native-image-crop-picker';
 
-const EditProfileScreen = () => {
+const CRegister = ({navigation}) => {
 
   const [image, setImage] = useState('https://api.adorable.io/avatars/80/abott@adorable.png');
   const {colors} = useTheme();
@@ -212,7 +212,7 @@ const EditProfileScreen = () => {
             ]}
           />
         </View>
-        <TouchableOpacity style={styles.commandButton} onPress={() => {}}>
+        <TouchableOpacity style={styles.commandButton} onPress={()=>navigation.navigate("CarDetailsSave")}>
           <Text style={styles.panelButtonTitle}>Submit</Text>
         </TouchableOpacity>
       </Animated.View>
@@ -220,7 +220,7 @@ const EditProfileScreen = () => {
   );
 };
 
-export default EditProfileScreen;
+export default CRegister;
 
 const styles = StyleSheet.create({
   container: {

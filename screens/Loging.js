@@ -22,7 +22,7 @@ import { useTheme } from '@react-navigation/native';
 />
 </View>
 
-<TouchableOpacity style={styles.button}>
+<TouchableOpacity style={styles.button} onPress={()=>navigation.navigate("CRegister")}>
      <Text style={styles.buttontext}>Loging</Text>
      </TouchableOpacity>
  

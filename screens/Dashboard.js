@@ -13,7 +13,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { useTheme } from '@react-navigation/native';
 
-const Dashboard = () => {
+const Dashboard = ({navigation}) => {
     const { colors } = useTheme();
 
     return (
@@ -39,7 +39,7 @@ const Dashboard = () => {
             }]}>Vehicle Selling App!</Text>
             <Text style={styles.text}>Sign in with account</Text>
             <View style={styles.button}>
-            <TouchableOpacity onPress={()=>navigation.navigate('SignInScreen')}>
+            <TouchableOpacity onPress={()=>navigation.navigate("Loging")}>
                 <LinearGradient
                     colors={['white', 'blue']}
                     style={styles.signIn}

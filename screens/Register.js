@@ -11,12 +11,9 @@ const Register = () => {
        <TextInput style={styles.input} placeholder="Name" keyboardType="text" />
        <TextInput style={styles.input} placeholder="Address" keyboardType="text" />
        <TextInput style={styles.input} placeholder="Contact" keyboardType="numeric"/>
-       <TextInput
-        style={styles.input}
-        placeholder="Vehicle Number" 
-        keyboardType="text"
+       <TextInput style={styles.input}placeholder="Vehicle Number" keyboardType="text"
       />
-     <TouchableOpacity name="buttonR" style={styles.button}>
+     <TouchableOpacity name="buttonR" style={styles.button} >
      <Text style={styles.buttontext}>Register</Text>
      </TouchableOpacity>
        
