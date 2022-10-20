@@ -198,22 +198,9 @@ const CRegister = ({navigation}) => {
           />
         </View>
       
-        <View style={styles.action}>
-          <Icon name="car" color={colors.text} size={20} />
-          <TextInput
-            placeholder="City"
-            placeholderTextColor="#666666"
-            autoCorrect={false}
-            style={[
-              styles.textInput,
-              {
-                color: colors.text,
-              },
-            ]}
-          />
-        </View>
+        
         <TouchableOpacity style={styles.commandButton}>
-          <Text style={styles.panelButtonTitle}>SUBMIT</Text>
+          <Text style={styles.panelButtonTitle}>SAVE</Text>
         </TouchableOpacity>
       </Animated.View>
     </View>

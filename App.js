@@ -20,8 +20,6 @@ const App=()=>{
       <Stack.Screen name="CarDetailsSave" component={CarDetailsSave} />
     </Stack.Navigator>
     </NavigationContainer>
-
-     
   )
 }
 export default App

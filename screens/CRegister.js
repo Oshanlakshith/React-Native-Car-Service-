@@ -135,7 +135,7 @@ const CRegister = ({navigation}) => {
             </View>
           </TouchableOpacity>
           <Text style={{marginTop: 10, fontSize: 18, fontWeight: 'bold'}}>
-           Vehicle Image
+           Customer Image
           </Text>
         </View>
 
@@ -197,9 +197,8 @@ const CRegister = ({navigation}) => {
             ]}
           />
         </View>
-      
         <View style={styles.action}>
-          <Icon name="map-marker-outline" color={colors.text} size={20} />
+          <Icon name="city" color={colors.text} size={20} />
           <TextInput
             placeholder="City"
             placeholderTextColor="#666666"
