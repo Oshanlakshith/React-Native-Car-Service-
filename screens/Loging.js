@@ -1,36 +1,41 @@
 import React from 'react';
 import { View,StyleSheet,Image,Text,TextInput, TouchableOpacity} from "react-native";
 import { useTheme } from '@react-navigation/native';
+import * as Animatable from 'react-native-animatable';
+
 
 
  const Loging=({navigation})=>{
     const { colors } = useTheme();
 
     return(
-<View>
+ <View>
     <Text style={styles.text}>
         LOGING FORM
         </Text>
-<Image style={styles.image} source={require('../assets/image/loging1.jpg')} />  
-<View style={styles.feilds}>
-<TextInput style={styles.input} placeholder="User Name" keyboardType="text" />
+ <Animatable.Image
+                 animation="bounceIn"
+                duraton="1500" 
+                style={styles.image} source={require('../assets/image/loging1.jpg')} />  
+ <View style={styles.feilds}>
+ <TextInput style={styles.input} placeholder="User Name" keyboardType="text" />
        <TextInput style={styles.input}
            placeholder="Password"
            returnKeyType='go'
            secureTextEntry
            autoCorrect={false}
-/>
-</View>
+  />
+  </View>
 
-<TouchableOpacity style={styles.button} onPress={()=>navigation.navigate("CRegister")}>
+ <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate("CRegister")}>
      <Text style={styles.buttontext}>Loging</Text>
      </TouchableOpacity>
  
-</View>
+  </View>
 
         );
     };
-const styles=StyleSheet.create({
+ const styles=StyleSheet.create({
     input: {
         height: 50,
         marginTop: 25,
